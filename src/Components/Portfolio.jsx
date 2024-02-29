@@ -19,9 +19,10 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/futuristic-desk.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText =
+  "Futuristic desk with gaming PC, keyboard, mouse and headset, and triple monitor setup, a bookshelf, with a window view of a city skyline at noon.";
 
 /**
  * Project list
@@ -31,28 +32,21 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Weather Now",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Simple weather web app that shows the current weather in your location. Built with Laravel, Inertia, React, Vite, Bootstrap, Tailwind CSS, and OpenWeatherMap API.",
+    url: "https://github.com/10122222/weather-now",
   },
   {
-    title: "Web Development for Beginners",
+    title: "WarPay",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "A wallet app that allows you to send and receive money from friends and family. Built with Java for Windows.",
+    url: "https://github.com/10122222/WarPay",
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
-  },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "Kernel for my personal use",
+    description: "A custom kernel for my personal android phone. Built with C.",
+    url: "https://github.com/10122222/kernel_xiaomi_vayu",
   },
 ];
 
