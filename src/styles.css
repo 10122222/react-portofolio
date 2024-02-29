@@ -123,3 +123,7 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+.text-gray-500 {
+  color: rgb(107 114 128 / 1);
+}
