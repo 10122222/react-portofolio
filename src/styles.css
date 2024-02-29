@@ -2,16 +2,21 @@
 * CSS file to hold styles that apply across the application
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap');
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+}
+
+/* add a smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -46,7 +51,7 @@ section img.background {
 }
 
 h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 7rem;
   font-weight: 400;
   line-height: 0.8;
@@ -124,6 +129,42 @@ img.socialIcon {
   width: 30px;
 }
 
-.text-gray-500 {
-  color: rgb(107 114 128 / 1);
+/* add a slide In Left animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* add text align styles for all available options */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* add text color to match the futuristic background */
+.text-gray-300 {
+  color: rgb(209 213 219 / 1);
 }

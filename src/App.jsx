@@ -4,15 +4,16 @@
  * To contain application wide settings, routes, state, etc.
  */
 
-import React from "react";
+import React from 'react';
 
-import About from "./Components/About";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import Home from "./Components/Home";
-import Portfolio from "./Components/Portfolio";
+import About from './Components/About';
+import Education from './Components/Education';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import Portfolio from './Components/Portfolio';
 
-import "./styles.css";
+import './styles.css';
 
 /**
  * This object represents your information. The project is set so that you
@@ -24,19 +25,19 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Muhammad Irkham N",
-  title: "Undergraduate Student",
-  email: "irkham.10122222@mahasiswa.unikom.ac.id",
-  gitHub: "10122222",
-  instagram: "i.rkham",
-  linkedIn: "m-irkham-n",
-  medium: "",
-  twitter: "roapsyme",
-  youTube: "",
+  name: 'Muhammad Irkham Nurmauludifa',
+  title: 'Undergraduate Student',
+  email: 'irkham.10122222@mahasiswa.unikom.ac.id',
+  gitHub: '10122222',
+  instagram: 'i.rkham',
+  linkedIn: 'm-irkham-n',
+  medium: '',
+  twitter: 'roapsyme',
+  youTube: '',
 };
 
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
+const primaryColor = '#4E567E';
+const secondaryColor = '#D2F1E4';
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />
+      <Education />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );

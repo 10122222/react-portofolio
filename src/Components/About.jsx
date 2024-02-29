@@ -4,21 +4,21 @@
  * Space for you to describe more about yourself.
  */
 
-import React from "react";
+import React from 'react';
 
 /**
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/blue-waves-motion.jpg";
+import image from '../images/blue-waves-motion.jpg';
 
-const imageAltText = "blue waves in motion, symbolizing creativity and innovation.";
+const imageAltText = 'blue waves in motion, symbolizing creativity and innovation.';
 
 /**
  * Sort description that expands on your title on the Home component.
@@ -31,11 +31,11 @@ const description =
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Data Analysis",
-  "UI/UX Design",
-  "Front-end Development",
-  "Back-end Development",
-  "Software Development",
+  'Data Analysis',
+  'UI/UX Design',
+  'Front-end Development',
+  'Back-end Development',
+  'Software Development',
 ];
 
 /**
@@ -44,7 +44,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. I am a fast learner and I am always looking for opportunities to learn and grow.";
+  'I am passionate about solving problems in new creative ways to drive innovation. I am a fast learner and I am always looking for opportunities to learn and grow.';
 
 const About = () => {
   return (
@@ -52,11 +52,11 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
+          backgroundColor: 'white',
+          width: '50%',
+          padding: '4rem',
+          margin: '3rem auto',
+          textAlign: 'center',
         }}
       >
         <h2>About Myself</h2>
@@ -64,11 +64,11 @@ const About = () => {
         <hr />
         <ul
           style={{
-            textAlign: "left",
+            textAlign: 'left',
             columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
+            fontSize: '1.25rem',
+            margin: '2rem 3rem',
+            gap: '3rem',
           }}
         >
           {skillsList.map((skill) => (
@@ -76,7 +76,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ padding: '1rem 3rem 0' }}>{detailOrQuote}</p>
       </div>
     </section>
   );

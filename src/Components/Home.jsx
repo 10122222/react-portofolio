@@ -5,43 +5,43 @@
  * choice, name and title that describes your career focus.
  */
 
-import React from "react";
-import arrowSvg from "../images/down-arrow.svg";
-import PropTypes from "prop-types";
+import React from 'react';
+import arrowSvg from '../images/down-arrow.svg';
+import PropTypes from 'prop-types';
 
 /**
  * Home background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  *
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/futuristic-science-fiction.jpg";
+import image from '../images/futuristic-science-fiction.jpg';
 
-const imageAltText = "Futuristic science fiction data illustration";
+const imageAltText = 'Futuristic science fiction data illustration';
 
 const Home = ({ name, title }) => {
   return (
     <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
-      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <h1 className="text-gray-500">{name}</h1>
-        <h2 className="text-gray-500">{title}</h2>
+      <img className="background" src={image} alt={imageAltText} />
+      <div style={{ position: 'absolute', top: '5rem', left: '2rem', width: '17rem' }}>
+        <h1 className="text-gray-300">{name}</h1>
+        <h2 className="text-gray-300">{title}</h2>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+      <div style={{ position: 'absolute', bottom: '3rem', left: '50%' }}>
+        <img src={arrowSvg} style={{ height: '3rem', width: '3rem' }} alt="arrow down" />
       </div>
     </section>
   );
 };
 
 Home.defaultProps = {
-  name: "",
-  title: "",
+  name: '',
+  title: '',
 };
 
 Home.propTypes = {

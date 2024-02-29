@@ -8,7 +8,7 @@
  * as you continue to learn and create.
  */
 
-import React from "react";
+import React from 'react';
 
 /**
  * Desk image
@@ -19,10 +19,10 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/futuristic-desk.jpg";
+import image from '../images/futuristic-desk.jpg';
 
 const imageAltText =
-  "Futuristic desk with gaming PC, keyboard, mouse and headset, and triple monitor setup, a bookshelf, with a window view of a city skyline at noon.";
+  'Futuristic desk with gaming PC, keyboard, mouse and headset, and triple monitor setup, a bookshelf, with a window view of a city skyline at noon.';
 
 /**
  * Project list
@@ -32,33 +32,38 @@ const imageAltText =
  */
 const projectList = [
   {
-    title: "Weather Now",
+    title: 'Weather Now',
     description:
-      "Simple weather web app that shows the current weather in your location. Built with Laravel, Inertia, React, Vite, Bootstrap, Tailwind CSS, and OpenWeatherMap API.",
-    url: "https://github.com/10122222/weather-now",
+      'Simple weather web app that shows the current weather in your location. Built with Laravel, Inertia, React, Vite, Bootstrap, Tailwind CSS, and OpenWeatherMap API.',
+    url: 'https://github.com/10122222/weather-now',
   },
   {
-    title: "WarPay",
+    title: 'WarPay',
     description:
-      "A wallet app that allows you to send and receive money from friends and family. Built with Java for Windows.",
-    url: "https://github.com/10122222/WarPay",
+      'A wallet app that allows you to send and receive money from friends and family. Built with Java for Windows.',
+    url: 'https://github.com/10122222/WarPay',
   },
   {
-    title: "Kernel for my personal use",
-    description: "A custom kernel for my personal android phone. Built with C.",
-    url: "https://github.com/10122222/kernel_xiaomi_vayu",
+    title: 'Kernel for my personal use',
+    description: 'A custom kernel for my personal android phone. Built with C.',
+    url: 'https://github.com/10122222/kernel_xiaomi_vayu',
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <h2 className="text-center">Portfolio</h2>
+      <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '3rem' }}>
+        <div style={{ maxWidth: '40%', alignSelf: 'center' }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: '90%',
+              width: '100%',
+              objectFit: 'cover',
+              animation: '1s ease-out 0s 1 slideInLeft',
+            }}
             alt={imageAltText}
           />
         </div>
@@ -66,7 +71,7 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 style={{ flexBasis: '40px' }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
             </div>
